@@ -712,6 +712,8 @@ body {
                 margin: 0 5px 5px 5px;
                 padding: 0 8px;
                 flex-shrink:1;
+                flex-grow: 1;
+                max-width: 100px;
             }
             .lottery_class{
                 color: #3e8ef0;
@@ -728,7 +730,7 @@ body {
             }
             .ctrlbtn{
                 flex-grow: 1;
-                max-width: 80px;
+                max-width: 100px;
                 i{
                     color: #fff;
                     font-size: 18px;
