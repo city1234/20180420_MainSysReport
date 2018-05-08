@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main system Reports</title>
+    <meta http-equiv="Content-Type"/>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/screen.css"/>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-in">
+            <div class="searchline">
+                <div class="searchplane">选择平台：
+                    <div class="inputout"><input type="text" name="search"><i class="icon-search"></i></div>
+                    <div class="searchnone">无搜索结果</div>
+                </div>
+                <div class="searchresult">
+                    <div class="searchresult_scroll icon-chevron-left"></div>
+                    <ul class="searchresult_textbox">
+                        <li>传统彩</li>
+                        <li>皇冠体育</li>
+                        <li>AG 捕鱼</li>
+                        <li class="active">AG 视讯</li>
+                        <li>ALLBET视讯</li>
+                        <li>BB彩票</li>
+                        <li>BB视讯</li>
+                        <li>BB体育</li>
+                        <li>BG电子</li>
+                        <li>BG捕鱼</li>
+                        <li>BG视讯</li>
+                        <li>CMD体育</li>
+                        <li>DS视讯</li>
+                        <li>LEBO视讯</li>
+                        <li>MG电子</li>
+                        <li>LEBO视讯</li>
+                    </ul>
+                    <div class="searchresult_scroll icon-chevron-right"></div>
+                </div>
+            </div>
+            <div class="searchlistline">
+                <div class="gamename_type_out">
+                    游戏类型：
+                    <select class="gamename_type" name="gamename_type">
+                        <option value="all">全部</option>
+                        <option value="游戏">游戏</option>
+                    </select>
+                </div>
+                <div class="memberaccount">
+                    会员账号：
+                    <div class="inputout"><input type="text" name="account"></div>
+                </div>
+                <div class="lotterynumber_search">
+                    注单号：
+                    <div class="inputout"><input type="text" name="lotterynumber"></div>
+                    <div class="inputout datepickerout">
+                        <input type="text" name="datepicker" class="datepicker" value="2018/04/27 00:00:00 - 2018/05/27 23:59:59"><i class="icon-icon_date"></i>
+                        <div class="datebox">
+                            <div class="month month_one">
+                                <div class="month_year">
+                                    <i class="icon-chevron-left"></i>
+                                    4月-2018
+                                </div>
+                                <div class="daybox">
+                                    <ul class="week">
+                                        <li>日</li>
+                                        <li>一</li>
+                                        <li>二</li>
+                                        <li>三</li>
+                                        <li>四</li>
+                                        <li>五</li>
+                                        <li>六</li>
+                                    </ul>
+                                    <ul class="day">
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li class="active">7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li>24</li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li>27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                    </ul>
+                                </div>
+                                <div class="time">
+                                    时间<input type="text" name="hour" class="hour" maxlength="2">
+                                    :
+                                    <div class="timepickinput">
+                                        <input type="text" name="minute" class="minute" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li><li>5</li><li>10</li><li>15</li><li>20</li><li>25</li>
+                                            <li class="active">30</li><li>35</li><li>40</li><li>45</li><li>50</li><li>55</li>
+                                        </ul>
+                                    </div>
+                                    : 
+                                    <div class="timepickinput">
+                                        <input type="text" name="second" class="second" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li><li>5</li><li>10</li><li>15</li><li>20</li><li>25</li>
+                                            <li class="active">30</li><li>35</li><li>40</li><li>45</li><li>50</li><li>55</li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <div class="up"><i class="icon-arrow_drop_down"></i></div>
+                                        <div class="down"><i class="icon-arrow_drop_down"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="month month_two">
+                                <div class="month_year">
+                                    5月-2018
+                                    <i class="icon-chevron-right"></i>
+                                </div>
+                                <div class="daybox">
+                                    <ul class="week">
+                                        <li>日</li>
+                                        <li>一</li>
+                                        <li>二</li>
+                                        <li>三</li>
+                                        <li>四</li>
+                                        <li>五</li>
+                                        <li>六</li>
+                                    </ul>
+                                    <ul class="day">
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li>24</li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li class="active">27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                        <li>31</li>
+                                    </ul>
+                                </div>
+                                <div class="time timepos">
+                                    时间<input type="text" name="hour" class="hour" maxlength="2">
+                                    :
+                                    <div class="timepickinput">
+                                        <input type="text" name="minute" class="minute" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li><li>5</li><li>10</li><li>15</li><li>20</li><li>25</li>
+                                            <li class="active">30</li><li>35</li><li>40</li><li>45</li><li>50</li><li>55</li>
+                                        </ul>
+                                    </div>
+                                    : 
+                                    <div class="timepickinput">
+                                        <input type="text" name="second" class="second" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li><li>5</li><li>10</li><li>15</li><li>20</li><li>25</li>
+                                            <li class="active">30</li><li>35</li><li>40</li><li>45</li><li>50</li><li>55</li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <div class="up"><i class="icon-arrow_drop_down"></i></div>
+                                        <div class="down"><i class="icon-arrow_drop_down"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <select name="lotterynumber_type">
+                        <option value="快选">快选</option>
+                        <option value="快选">快选</option>
+                    </select>
+                    <div class="searchbtn"><i class="icon-search"></i>查询</div>
+                </div>
+                <!--
+                <div class="exportout">
+                    <div class="export"><i class="icon-icon_export"></i>导出EXCEL</div>
+                    <div class="information_out"><i class="icon-icon_information"></i>
+                        <div class="information_txt information_txt_right">测试线仅支持查询传统彩及皇冠体育平台</div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <div class="contentboxout">
+                <!--alert_loading-->
+                <div class="contentbox alertboxout alert_loading">
+                    <div class="alertbox">
+                        <div class="alertimg">
+                            <img src="images/waitpic_loading.png">
+                        </div>
+                        <div class="alerttxt">
+                            数据拼命加载中，还需等待......
+                        </div>
+                    </div>
+                    <div class="alertboxbtn">等你出现</div>
+                </div>
+                <!--alert_none-->
+                <div class="contentbox alertboxout alert_none">
+                    <div class="alertbox">
+                        <div class="alertimg">
+                            <img src="images/waitpic_loading.png">
+                        </div>
+                        <div class="alerttxt">
+                            暂无数据
+                        </div>
+                    </div>
+                </div>
+                <!--alert_searchplan-->
+                <div class="contentbox alertboxout alert_searchplan">
+                    <div class="alertbox">
+                        <div class="alertimg">
+                            <img src="images/waitpic_searchplan.png">
+                        </div>
+                        <div class="alerttxt">
+                            请选择您要查询的平台
+                        </div>
+                    </div>
+                </div>
+                <!--table_one-->
+                <div class="contentbox realtimepage_table tablestyle table_one">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>序号</td>
+                                <td>会员</td>
+                                <td>注单号</td>
+                                <td>下注时间</td>
+                                <td>子弹</td>
+                                <td>子弹价格</td>
+                                <td>鱼价</td>
+                                <td>损益</td>
+                                <td>jackpot交收</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="red">50.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="red">50.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="red">200.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="red">50.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>2</td>
+                                <td>50.00</td>
+                                <td>100.00</td>
+                                <td class="red">50.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>小计</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>16.00</td>
+                                <td>400.00</td>
+                                <td>800.00</td>
+                                <td class="red">100.00</td>
+                                <td>284440.00</td>
+                            </tr>
+                            <tr>
+                                <td>总计</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>16.00</td>
+                                <td>400.00</td>
+                                <td>800.00</td>
+                                <td class="red">100.00</td>
+                                <td>284440.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="searchpagebar">
+                        <div class="allpage">第1/ 23 条</div>
+                        <div class="mouchline">每页条数 
+                            <select name="mouchline_select">
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                        <div class="turnpage">
+                            <div class="turnpagetxt">首页</div>
+                            <div class="turnpagebtn turnpageleft"><i class="icon-angle-double-left"></i></div>
+                            <div class="turnpagenumber">1/10</div>
+                            <div class="turnpagebtn turnpageright"><i class="icon-angle-double-right"></i></div>
+                            <div class="turnpagetxt">尾页</div>
+                            <div class="inputout"><input type="text" name="turnpageinput" value="1"></div>
+                            <div class="turnpagetxt">跳转</div>
+                        </div>
+                    </div>
+                </div>
+                <!--table_two-->
+                <div class="contentbox realtimepage_table tablestyle table_two">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>序号</td>
+                                <td>游戏平台</td>
+                                <td>会员</td>
+                                <td>注单号</td>
+                                <td>主订单号
+                                    <div class="information_out">
+                                        <i class="icon-icon_information"></i>
+                                        <div class="information_txt">测试线仅支持查询传统彩及皇冠体育平台</div>
+                                    </div>
+                                </td>
+                                <td>下注时间</td>
+                                <td>下注类型</td>
+                                <td>下注金额</td>
+                                <td>有效投注额</td>
+                                <td>损益</td>
+                                <td>jackpo交收</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>XIN</td>
+                                <td>oppm001</td>
+                                <td>1805041237414</td>
+                                <td>1805041237414</td>
+                                <td>2018-03-16-23:34:34</td>
+                                <td>电子游戏</td>
+                                <td>50.00</td>
+                                <td>50.00</td>
+                                <td class="green">-100.00</td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>小计</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>400.00</td>
+                                <td>400.00</td>
+                                <td class="red">100.00</td>
+                                <td>284440.00</td>
+                            </tr>
+                            <tr>
+                                <td>总计</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>400.00</td>
+                                <td>400.00</td>
+                                <td class="red">100.00</td>
+                                <td>284440.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="searchpagebar">
+                        <div class="allpage">第1/ 23 条</div>
+                        <div class="mouchline">每页条数
+                            <select name="mouchline_select">
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                        <div class="turnpage">
+                            <div class="turnpagetxt">首页</div>
+                            <div class="turnpagebtn turnpageleft">
+                                <i class="icon-angle-double-left"></i>
+                            </div>
+                            <div class="turnpagenumber">1/10</div>
+                            <div class="turnpagebtn turnpageright">
+                                <i class="icon-angle-double-right"></i>
+                            </div>
+                            <div class="turnpagetxt">尾页</div>
+                            <div class="inputout">
+                                <input type="text" name="turnpageinput" value="1">
+                            </div>
+                            <div class="turnpagetxt">跳转</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomnote">
+                页面解读：<br/>
+                注单管理仅支持单平台查询，支持模糊查询；<br/>
+                每次进入时，需先选择查询的平台；<br/>
+                可根据单平台进行全部会员/单一会员及各平台的查询条件进行查询；
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

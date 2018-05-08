@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main system Reports</title>
+    <meta http-equiv="Content-Type"/>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/screen.css"/>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="reportpage">
+        <div class="wrapper-in">
+            <div class="searchline">
+                <div class="searchplane">选择平台：
+                </div>
+                <div class="moreplantbtn_out">
+                    <div class="moreplantbtn">
+                        更多平台
+                    </div>
+                    <div class="plantbox">
+                        <ul class="plantctrl">
+                            <li class="lottery_class lottery_all">全选</li>
+                            <li class="lottery_class">彩票类</li>
+                            <li class="lottery_class">体育类</li>
+                            <li class="lottery_class">电子类</li>
+                            <li class="lottery_class active">视讯类</li>
+                            <li class="lottery_class">棋牌类</li>
+                            <li class="ctrlbtn lottery_delete"><i class="icon-icon_pt_trashcan"></i>清空</li>
+                            <li class="ctrlbtn lottery_chose"><i class="icon-checkmark"></i>完成选择</li>
+                        </ul>
+                        <div class="tablestyle table_plant">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>彩票</td>
+                                        <td>视讯</td>
+                                        <td>电子</td>
+                                        <td>体育</td>
+                                        <td>棋牌</td>
+                                        <td>3D</td>
+                                        <td>捕鱼</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>传统彩</td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>皇冠</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>CMD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>沙巴</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>BBIN</td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>MG</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>AG</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>PT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>新MG</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>MWG</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>PP</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>OG</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>HG</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>DS</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>ALLBET</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>OPUS</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>LEBO</td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle active"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon-check_circle"></i>VG</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-check_circle"></i></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="searchlistline">
+                <div class="gamedata_out">
+                    <select class="gamedata" name="gamedata_type">
+                        <option value="0">正式线数据</option>
+                        <option value="1">正式线数据</option>
+                    </select>
+                </div>
+                <div class="information_out">
+                    <i class="icon-icon_information"></i>
+                    <div class="information_txt">测试线仅支持查询传统彩及皇冠体育平台</div>
+                </div>
+                <div class="bigboss_out">
+                    <select class="bigboss" name="bigboss_type">
+                        <option value="0">大大股东</option>
+                        <option value="1">大大大股东</option>
+                        <option value="2">大大大大股东</option>
+                    </select>
+                </div>
+                <div class="inputout">
+                    <input type="text" name="lotterynumber">
+                </div>
+                <div class="lotterynumber_search">
+                    <div class="inputout datepickerout">
+                        <input type="text" name="datepicker" class="datepicker" value="2018/04/27 00:00:00 - 2018/05/27 23:59:59">
+                        <i class="icon-icon_date"></i>
+                        <div class="datebox">
+                            <div class="month month_one">
+                                <div class="month_year">
+                                    <i class="icon-chevron-left"></i>
+                                    4月-2018
+                                </div>
+                                <div class="daybox">
+                                    <ul class="week">
+                                        <li>日</li>
+                                        <li>一</li>
+                                        <li>二</li>
+                                        <li>三</li>
+                                        <li>四</li>
+                                        <li>五</li>
+                                        <li>六</li>
+                                    </ul>
+                                    <ul class="day">
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li class="active">7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li>24</li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li>27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                    </ul>
+                                </div>
+                                <div class="time">
+                                    时间
+                                    <input type="text" name="hour" class="hour" maxlength="2"> :
+                                    <div class="timepickinput">
+                                        <input type="text" name="minute" class="minute" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li>
+                                            <li>5</li>
+                                            <li>10</li>
+                                            <li>15</li>
+                                            <li>20</li>
+                                            <li>25</li>
+                                            <li class="active">30</li>
+                                            <li>35</li>
+                                            <li>40</li>
+                                            <li>45</li>
+                                            <li>50</li>
+                                            <li>55</li>
+                                        </ul>
+                                    </div>
+                                    :
+                                    <div class="timepickinput">
+                                        <input type="text" name="second" class="second" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li>
+                                            <li>5</li>
+                                            <li>10</li>
+                                            <li>15</li>
+                                            <li>20</li>
+                                            <li>25</li>
+                                            <li class="active">30</li>
+                                            <li>35</li>
+                                            <li>40</li>
+                                            <li>45</li>
+                                            <li>50</li>
+                                            <li>55</li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <div class="up">
+                                            <i class="icon-arrow_drop_down"></i>
+                                        </div>
+                                        <div class="down">
+                                            <i class="icon-arrow_drop_down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="month month_two">
+                                <div class="month_year">
+                                    5月-2018
+                                    <i class="icon-chevron-right"></i>
+                                </div>
+                                <div class="daybox">
+                                    <ul class="week">
+                                        <li>日</li>
+                                        <li>一</li>
+                                        <li>二</li>
+                                        <li>三</li>
+                                        <li>四</li>
+                                        <li>五</li>
+                                        <li>六</li>
+                                    </ul>
+                                    <ul class="day">
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li class="block"></li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li>24</li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li class="active">27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                        <li>31</li>
+                                    </ul>
+                                </div>
+                                <div class="time timepos">
+                                    时间
+                                    <input type="text" name="hour" class="hour" maxlength="2"> :
+                                    <div class="timepickinput">
+                                        <input type="text" name="minute" class="minute" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li>
+                                            <li>5</li>
+                                            <li>10</li>
+                                            <li>15</li>
+                                            <li>20</li>
+                                            <li>25</li>
+                                            <li class="active">30</li>
+                                            <li>35</li>
+                                            <li>40</li>
+                                            <li>45</li>
+                                            <li>50</li>
+                                            <li>55</li>
+                                        </ul>
+                                    </div>
+                                    :
+                                    <div class="timepickinput">
+                                        <input type="text" name="second" class="second" maxlength="2">
+                                        <ul class="timepickbox">
+                                            <li>0</li>
+                                            <li>5</li>
+                                            <li>10</li>
+                                            <li>15</li>
+                                            <li>20</li>
+                                            <li>25</li>
+                                            <li class="active">30</li>
+                                            <li>35</li>
+                                            <li>40</li>
+                                            <li>45</li>
+                                            <li>50</li>
+                                            <li>55</li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <div class="up">
+                                            <i class="icon-arrow_drop_down"></i>
+                                        </div>
+                                        <div class="down">
+                                            <i class="icon-arrow_drop_down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <select name="lotterynumber_type">
+                        <option value="快选">快选</option>
+                        <option value="快选">快选</option>
+                    </select>
+                    <div class="searchbtn">
+                        <i class="icon-search"></i>查询
+                    </div>
+                </div>
+                <!--
+                <div class="exportout">
+                    <div class="export"><i class="icon-icon_export"></i>导出EXCEL</div>
+                    <div class="information_out"><i class="icon-icon_information"></i>
+                        <div class="information_txt information_txt_right">测试线仅支持查询传统彩及皇冠体育平台</div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <div class="contentboxout">
+                <!--alert_loading-->
+                <div class="contentbox alertboxout alert_loading">
+                    <div class="alertbox">
+                        <div class="alertimg">
+                            <img src="images/waitpic_loading.png">
+                        </div>
+                        <div class="alerttxt">
+                            数据拼命加载中，还需等待......
+                        </div>
+                    </div>
+                    <div class="alertboxbtn">等你出现</div>
+                </div>
+                <!--alert_none-->
+                <div class="contentbox alertboxout alert_none">
+                    <div class="alertbox">
+                        <div class="alertimg">
+                            <img src="images/waitpic_loading.png">
+                        </div>
+                        <div class="alerttxt">
+                            暂无数据
+                        </div>
+                    </div>
+                </div>
+                <!--alert_searchplan-->
+                <div class="contentbox alertboxout alert_searchplan">
+                    <div class="alertbox">
+                        <div class="alertimg">
+                            <img src="images/waitpic_searchplan.png">
+                        </div>
+                        <div class="alerttxt">
+                            请选择您要查询的平台
+                        </div>
+                    </div>
+                </div>
+                <!--table_one-->
+                <div class="contentbox realtimepage_table tablestyle table_one">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>序号</td>
+                                <td>游戏平台</td>
+                                <td>注单量</td>
+                                <td>下注金额</td>
+                                <td>有效投注额</td>
+                                <td>盈亏</td>
+                                <td>累计奖池</td>
+                                <td>累计彩金</td>
+                                <td>Jackpot交收</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>传统彩</td>
+                                <td>400</td>
+                                <td class="bule">1800.00</td>
+                                <td>1800.00</td>
+                                <td class="green">-514.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>AB视讯</td>
+                                <td>200</td>
+                                <td class="bule">1200.00</td>
+                                <td>1200.00</td>
+                                <td class="red">1214.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>MG视讯</td>
+                                <td>4800</td>
+                                <td class="bule">7200.00</td>
+                                <td>1800.00</td>
+                                <td class="green">-1514.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>BB体育</td>
+                                <td>1200</td>
+                                <td class="bule">87200.00</td>
+                                <td>1800.00</td>
+                                <td class="red">6514.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>CMD体育</td>
+                                <td>3650</td>
+                                <td class="bule">187200.00</td>
+                                <td>1800.00</td>
+                                <td class="green">-5314.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>PP电子</td>
+                                <td>7890</td>
+                                <td class="bule">67200.00</td>
+                                <td>67200.00</td>
+                                <td class="green">-314.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>沙巴体育</td>
+                                <td>45230</td>
+                                <td class="bule">287200.00</td>
+                                <td>287200.00</td>
+                                <td class="red">6514.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>OG</td>
+                                <td>5840</td>
+                                <td class="bule">6200.00</td>
+                                <td>6200.00</td>
+                                <td class="red">5414.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>35555.00</td>
+                            </tr>
+                            <tr>
+                                <td>小计</td>
+                                <td>&nbsp;</td>
+                                <td>69210.00</td>
+                                <td class="bule">645200.00</td>
+                                <td>645200.00</td>
+                                <td class="red">12000.00</td>
+                                <td></td>
+                                <td></td>
+                                <td>284440.00</td>
+                            </tr>
+                            <tr>
+                                <td>总计</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="searchpagebar">
+                        <div class="allpage">第1/ 23 条</div>
+                        <div class="mouchline">每页条数 
+                            <select name="mouchline_select">
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                        <div class="turnpage">
+                            <div class="turnpagetxt">首页</div>
+                            <div class="turnpagebtn turnpageleft"><i class="icon-angle-double-left"></i></div>
+                            <div class="turnpagenumber">1/10</div>
+                            <div class="turnpagebtn turnpageright"><i class="icon-angle-double-right"></i></div>
+                            <div class="turnpagetxt">尾页</div>
+                            <div class="inputout"><input type="text" name="turnpageinput" value="1"></div>
+                            <div class="turnpagetxt">跳转</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomnote">
+                页面解读：<br/>
+                注单管理仅支持单平台查询，支持模糊查询；<br/>
+                每次进入时，需先选择查询的平台；<br/>
+                可根据单平台进行全部会员/单一会员及各平台的查询条件进行查询；
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
