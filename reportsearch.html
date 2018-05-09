@@ -492,28 +492,26 @@
                     <div class="alertbox">
                         <div class="alertimg">
                             <div class="lds-svg ng-scope">
-                                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"
-                                    class="lds-bar-chart">
+                                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bar-chart">
                                     <g transform="rotate(180 50 50)">
-                                        <rect ng-attr-x="{{config.x1}}" y="15" ng-attr-width="{{config.width}}" height="48.7936" fill="#0051a2" x="15"
+                                        <rect ng-attr-x="{{config.x1}}" y="15" ng-attr-width="{{config.width}}" height="31.4908" fill="#0051a2" x="15" width="10">
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.4" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="-0.16000000000000003s" repeatCount="indefinite"></animate>
+                                        </rect>
+                                        <rect ng-attr-x="{{config.x2}}" y="15" ng-attr-width="{{config.width}}" height="41.22" fill="#1b75be" x="35"
                                             width="10">
-                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="1"
-                                                keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.4s" repeatCount="indefinite"></animate>
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.4" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="-0.08000000000000002s" repeatCount="indefinite"></animate>
                                         </rect>
-                                        <rect ng-attr-x="{{config.x2}}" y="15" ng-attr-width="{{config.width}}" height="31.4908" fill="#1b75be"
-                                            x="35" width="10">
-                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="1"
-                                                keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate>
+                                        <rect ng-attr-x="{{config.x3}}" y="15" ng-attr-width="{{config.width}}" height="48.7936" fill="#408ee0" x="55"
+                                            width="10">
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.4" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="-0.24s" repeatCount="indefinite"></animate>
                                         </rect>
-                                        <rect ng-attr-x="{{config.x3}}" y="15" ng-attr-width="{{config.width}}" height="56.3092" fill="#408ee0"
-                                            x="55" width="10">
-                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="1"
-                                                keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.6s" repeatCount="indefinite"></animate>
-                                        </rect>
-                                        <rect ng-attr-x="{{config.x4}}" y="15" ng-attr-width="{{config.width}}" height="41.22" fill="#89bff8"
-                                            x="75" width="10">
-                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="1"
-                                                keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"></animate>
+                                        <rect ng-attr-x="{{config.x4}}" y="15" ng-attr-width="{{config.width}}" height="69.9878" fill="#89bff8" x="75"
+                                            width="10">
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.4" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="0s" repeatCount="indefinite"></animate>
                                         </rect>
                                     </g>
                                 </svg>
@@ -526,102 +524,6 @@
                     <!--
                     <div class="alertboxbtn">等你出现</div>
                     -->
-                </div>
-                <!--alert_loading2-->
-                <div class="contentbox alertboxout alert_loading">
-                    <div class="alertbox">
-                        <div class="alertimg">
-                            <div class="lds-svg ng-scope">
-                                <svg class="lds-gears" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-                                    <g transform="translate(50 50)">
-                                        <g transform="translate(-19 -19) scale(0.6)">
-                                            <g transform="rotate(142.5)">
-                                                <animateTransform attributeName="transform" type="rotate" values="0;360" keyTimes="0;1" dur="1.6s" begin="0s" repeatCount="indefinite"></animateTransform>
-                                                <path d="M37.25251669350676 -7.5 L47.25251669350676 -7.5 L47.25251669350676 7.5 L37.25251669350676 7.5 A38 38 0 0 1 31.6448080291428 21.038206311344588 L31.6448080291428 21.038206311344588 L38.71587584100828 28.109274123210064 L28.109274123210064 38.71587584100828 L21.038206311344588 31.6448080291428 A38 38 0 0 1 7.499999999999998 37.25251669350676 L7.499999999999998 37.25251669350676 L7.499999999999999 47.25251669350676 L-7.499999999999993 47.25251669350676 L-7.499999999999994 37.25251669350676 A38 38 0 0 1 -21.038206311344588 31.6448080291428 L-21.038206311344588 31.6448080291428 L-28.109274123210064 38.71587584100828 L-38.71587584100827 28.109274123210067 L-31.644808029142798 21.03820631134459 A38 38 0 0 1 -37.25251669350676 7.5 L-37.25251669350676 7.5 L-47.25251669350676 7.500000000000001 L-47.25251669350676 -7.499999999999991 L-37.25251669350676 -7.499999999999992 A38 38 0 0 1 -31.6448080291428 -21.038206311344588 L-31.6448080291428 -21.038206311344588 L-38.71587584100828 -28.109274123210064 L-28.10927412321006 -38.71587584100828 L-21.038206311344585 -31.644808029142805 A38 38 0 0 1 -7.5000000000000195 -37.252516693506756 L-7.5000000000000195 -37.252516693506756 L-7.500000000000021 -47.252516693506756 L7.5000000000000036 -47.25251669350676 L7.500000000000005 -37.25251669350676 A38 38 0 0 1 21.038206311344574 -31.644808029142816 L21.038206311344574 -31.644808029142816 L28.10927412321005 -38.71587584100829 L38.71587584100828 -28.109274123210064 L31.644808029142805 -21.038206311344585 A38 38 0 0 1 37.252516693506756 -7.500000000000021 M0 -20A20 20 0 1 0 0 20 A20 20 0 1 0 0 -20"
-                                                    fill="#0051a2"></path>
-                                            </g>
-                                        </g>
-                                        <g transform="translate(19 19) scale(0.6)">
-                                            <g transform="rotate(195)">
-                                                <animateTransform attributeName="transform" type="rotate" values="360;0" keyTimes="0;1" dur="1.6s" begin="-0.1s" repeatCount="indefinite"></animateTransform>
-                                                <path d="M37.25251669350676 -7.5 L47.25251669350676 -7.5 L47.25251669350676 7.5 L37.25251669350676 7.5 A38 38 0 0 1 31.6448080291428 21.038206311344588 L31.6448080291428 21.038206311344588 L38.71587584100828 28.109274123210064 L28.109274123210064 38.71587584100828 L21.038206311344588 31.6448080291428 A38 38 0 0 1 7.499999999999998 37.25251669350676 L7.499999999999998 37.25251669350676 L7.499999999999999 47.25251669350676 L-7.499999999999993 47.25251669350676 L-7.499999999999994 37.25251669350676 A38 38 0 0 1 -21.038206311344588 31.6448080291428 L-21.038206311344588 31.6448080291428 L-28.109274123210064 38.71587584100828 L-38.71587584100827 28.109274123210067 L-31.644808029142798 21.03820631134459 A38 38 0 0 1 -37.25251669350676 7.5 L-37.25251669350676 7.5 L-47.25251669350676 7.500000000000001 L-47.25251669350676 -7.499999999999991 L-37.25251669350676 -7.499999999999992 A38 38 0 0 1 -31.6448080291428 -21.038206311344588 L-31.6448080291428 -21.038206311344588 L-38.71587584100828 -28.109274123210064 L-28.10927412321006 -38.71587584100828 L-21.038206311344585 -31.644808029142805 A38 38 0 0 1 -7.5000000000000195 -37.252516693506756 L-7.5000000000000195 -37.252516693506756 L-7.500000000000021 -47.252516693506756 L7.5000000000000036 -47.25251669350676 L7.500000000000005 -37.25251669350676 A38 38 0 0 1 21.038206311344574 -31.644808029142816 L21.038206311344574 -31.644808029142816 L28.10927412321005 -38.71587584100829 L38.71587584100828 -28.109274123210064 L31.644808029142805 -21.038206311344585 A38 38 0 0 1 37.252516693506756 -7.500000000000021 M0 -20A20 20 0 1 0 0 20 A20 20 0 1 0 0 -20"
-                                                    fill="#1b75be"></path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="alerttxt">
-                            数据拼命加载中，还需等待......
-                        </div>
-                    </div>
-                    <!--
-                        <div class="alertboxbtn">等你出现</div>
-                    -->
-                </div>
-                <!--alert_loading3-->
-                <div class="contentbox alertboxout alert_loading">
-                    <div class="alertbox">
-                        <div class="alertimg">
-                            <div class="lds-svg ng-scope">
-                                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-facebook">
-                                    <rect ng-attr-x="{{config.x1}}" ng-attr-y="{{config.y}}" ng-attr-width="{{config.width}}" ng-attr-height="{{config.height}}"
-                                        ng-attr-fill="{{config.c1}}" x="15" y="29.108" width="20" height="41.7839" fill="#0051a2">
-                                        <animate attributeName="y" calcMode="spline" values="10;30;30" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-                                            begin="-0.2s" repeatCount="indefinite"></animate>
-                                        <animate attributeName="height" calcMode="spline" values="80;40;40" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-                                            begin="-0.2s" repeatCount="indefinite"></animate>
-                                    </rect>
-                                    <rect ng-attr-x="{{config.x2}}" ng-attr-y="{{config.y}}" ng-attr-width="{{config.width}}" ng-attr-height="{{config.height}}"
-                                        ng-attr-fill="{{config.c2}}" x="40" y="27.9148" width="20" height="44.1705" fill="#1b75be">
-                                        <animate attributeName="y" calcMode="spline" values="15;30;30" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-                                            begin="-0.1s" repeatCount="indefinite"></animate>
-                                        <animate attributeName="height" calcMode="spline" values="70;40;40" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-                                            begin="-0.1s" repeatCount="indefinite"></animate>
-                                    </rect>
-                                    <rect ng-attr-x="{{config.x3}}" ng-attr-y="{{config.y}}" ng-attr-width="{{config.width}}" ng-attr-height="{{config.height}}"
-                                        ng-attr-fill="{{config.c3}}" x="65" y="27.087" width="20" height="45.8261" fill="#408ee0">
-                                        <animate attributeName="y" calcMode="spline" values="20;30;30" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-                                            begin="0s" repeatCount="indefinite"></animate>
-                                        <animate attributeName="height" calcMode="spline" values="60;40;40" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-                                            begin="0s" repeatCount="indefinite"></animate>
-                                    </rect>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="alerttxt">
-                            数据拼命加载中，还需等待......
-                        </div>
-                    </div>
-                </div>
-                <!--alert_loading4-->
-                <div class="contentbox alertboxout alert_loading">
-                    <div class="alertbox">
-                        <div class="alertimg">
-                            <div class="lds-svg ng-scope">
-                                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-zigzag">
-                                    <defs>
-                                        <clipPath id="zigzag-clip-14b36a7765e69">
-                                            <rect x="20" y="0" width="60" height="100"></rect>
-                                        </clipPath>
-                                    </defs>
-                                    <path fill="none" stroke="#0051a2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                        clip-path="url(#zigzag-clip-14b36a7765e69)" d="M90,76.7V28.3c0-2.7-2.2-5-5-5h-3.4c-2.7,0-5,2.2-5,5v43.4c0,2.7-2.2,5-5,5h-3.4c-2.7,0-5-2.2-5-5V28.3c0-2.7-2.2-5-5-5H55 c-2.7,0-5,2.2-5,5v43.4c0,2.7-2.2,5-5,5h-3.4c-2.7,0-5-2.2-5-5V28.3c0-2.7-2.2-5-5-5h-3.4c-2.7,0-5,2.2-5,5v43.4c0,2.7-2.2,5-5,5H15 c-2.7,0-5-2.2-5-5V23.3"
-                                        transform="translate(-11 0)">
-                                        <animateTransform attributeName="transform" type="translate" calcMode="linear" values="-20 0;7 0" keyTimes="0;1"
-                                            dur="0.4s" begin="0s" repeatCount="indefinite"></animateTransform>
-                                        <animate attributeName="stroke-dasharray" calcMode="linear" values="0 72 125 232;0 197 125 233"
-                                            keyTimes="0;1" dur="0.4" begin="0s" repeatCount="indefinite"></animate>
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="alerttxt">
-                            数据拼命加载中，还需等待......
-                        </div>
-                    </div>
                 </div>
                 <!--alert_none-->
                 <div class="contentbox alertboxout alert_none">
