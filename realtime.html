@@ -243,17 +243,36 @@
                 <!--alert_loading-->
                 <div class="contentbox alertboxout alert_loading">
                     <div class="alertbox">
-                        <!--
                         <div class="alertimg">
-                            <img src="images/waitpic_loading.png">
+                            <div class="lds-svg ng-scope">
+                                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-bar-chart">
+                                    <g transform="rotate(180 50 50)">
+                                        <rect ng-attr-x="{{config.x1}}" y="15" ng-attr-width="{{config.width}}" height="69.9721" fill="#0051a2" x="15" width="10">
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.8" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="-0.32000000000000006s" repeatCount="indefinite"></animate>
+                                        </rect>
+                                        <rect ng-attr-x="{{config.x2}}" y="15" ng-attr-width="{{config.width}}" height="56.7644" fill="#1b75be" x="35" width="10">
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.8" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="-0.16000000000000003s" repeatCount="indefinite"></animate>
+                                        </rect>
+                                        <rect ng-attr-x="{{config.x3}}" y="15" ng-attr-width="{{config.width}}" height="40.386" fill="#408ee0" x="55" width="10">
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.8" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="-0.48s" repeatCount="indefinite"></animate>
+                                        </rect>
+                                        <rect ng-attr-x="{{config.x4}}" y="15" ng-attr-width="{{config.width}}" height="48.9533" fill="#89bff8" x="75" width="10">
+                                            <animate attributeName="height" calcMode="spline" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="0.8" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                                                begin="0s" repeatCount="indefinite"></animate>
+                                        </rect>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
-                        -->
-                        <div class="alerttxt alertonlytxt">
+                        <div class="alerttxt">
                             数据拼命加载中，还需等待......
                         </div>
                     </div>
                     <!--
-                    <div class="alertboxbtn">等你出现</div>
+                        <div class="alertboxbtn">等你出现</div>
                     -->
                 </div>
                 <!--alert_none-->
