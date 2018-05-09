@@ -12,14 +12,20 @@ $(document).ready(function() {
     //datepicker_outbox
     $(".datepickerout input ,.datepickerout .icon-icon_date").click(function () {
         $(this).parent(".datepickerout").toggleClass('datepickerout_active');
+        $(".plantbox").removeClass('plantbox_active');
     });
     //more_plant_outbox
     $(".moreplantbtn").click(function () {
         $(".plantbox").toggleClass('plantbox_active');
+        $(".datepickerout").removeClass('datepickerout_active');
     });
-
-
-
+    //icon-check_circle_active
+    $("td:not('.check_all') .icon-check_circle").click(function () {
+        $(this).toggleClass('active');
+    });
+    $(".check_all").click(function () {
+        $(this).children('i.icon-check_circle').toggleClass('active');
+    });
 
 
     //demo_display_link
