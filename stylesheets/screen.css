@@ -922,7 +922,7 @@ body {
 }
 /* line 694, ../sass/screen.scss */
 .alert_loading .alertbox .alertimg {
-  width: 100px;
+  width: 80px;
   margin: 0 auto;
   margin-top: 100px;
 }
