@@ -304,6 +304,15 @@ body {
             margin-top: 1px;
         }
     }
+    .prepageout{
+        float: right;
+        >*{
+            float: left;
+        }
+        i{
+            margin-top: 1px;
+        }
+    }
 }
 .searchbtn{
     width: 65px;
@@ -328,6 +337,23 @@ body {
     height: 30px;
     color:#fff;
     background: #26bd7b;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0 5px;
+    i{
+        color:#fff;
+        margin-right: 10px;
+        position: relative;
+        top: 1px;
+    }
+}
+.prepage{
+    width: 105px;
+    height: 30px;
+    color:#fff;
+    background: #3e8ef0;
     line-height: 30px;
     text-align: center;
     cursor: pointer;
@@ -418,6 +444,12 @@ body {
         border-spacing: 0px!important;
         width: 100%;
         tr{
+            @include css3(transition,all .2s ease);
+            &:not(:first-child){
+                &:hover{
+                    background: #efefef!important;
+                }
+            }
             &:nth-child(odd){
                 background-color: #f7f7f7;
             }
@@ -432,7 +464,7 @@ body {
                 padding: 0 5px;
                 vertical-align: middle;
                 color:#666666;
-                line-height: 50px;
+                line-height: 44px;
             }
             .red{
                 color:#f68622;
@@ -442,6 +474,19 @@ body {
             }
             .bule{
                 color:#3e8ef0;
+            }
+            .tablelink{
+                color:#3e8ef0;
+                cursor: pointer;
+                &:hover{
+                    color:#3576c5;
+                }
+            }
+            a{
+                color:#3e8ef0;
+                &:hover{
+                    color:#3576c5;
+                }
             }
         }
     }
@@ -643,12 +688,10 @@ body {
     background: #fff;
     position: relative;
     top: 10px;
-    .contentbox{
-        min-height: 595px;
-    }
 }
 /*alertbox*/
 .alertboxout{
+    min-height: 530px;
     .alertbox{
         width: 650px;
         height: 260px;
