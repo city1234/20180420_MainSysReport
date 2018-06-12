@@ -96,7 +96,6 @@ select{
 .information_out{
     position: relative;
     display: inline;
-    /*
     &:hover{
         .information_txt{
             display: inherit;
@@ -106,7 +105,6 @@ select{
             background: #3e8ef0;
         }
     }
-    */
     .information_txt_right{
         right: 0px;
         left: auto!important;

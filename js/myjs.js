@@ -1,5 +1,6 @@
 $(document).ready(function() {
     //information_outbox
+    /*
     $(".information_out").click(function() {
         $(this).toggleClass('information_show');
     });
@@ -9,6 +10,7 @@ $(document).ready(function() {
             turethis.removeClass('information_show');
         }, 500);
     });
+    */
     //datepicker_outbox
     $(".datepickerout input ,.datepickerout .icon-icon_date").click(function () {
         $(this).parent(".datepickerout").toggleClass('datepickerout_active');
