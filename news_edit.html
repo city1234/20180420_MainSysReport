@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main system Reports</title>
+    <meta http-equiv="Content-Type"/>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/screen.css"/>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="newseditpage">
+        <div class="wrapper-in">
+            <div class="searchlistline">
+                <div class="linebtn">启用区</div>
+                <div class="linebtn">停用区</div>
+                <div class="linebtn">新增账号</div>
+                <div class="linebtn">自定义</div>
+                <div class="dollar_out">
+                    币别：
+                    <select class="dollar" name="dollar_type">
+                        <option value="rmb">人民币（RMB）</option>
+                        <option value="rmb">人民币（RMB）</option>
+                    </select>
+                </div>
+                <div class="savebtn btnhover">
+                    <i class="icon-checkmark"></i>保存
+                </div>
+            </div>
+            <div class="contentboxout">
+                <!--table_one-->
+                <div class="contentbox realtimepage_table tablestyle table_one">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>支付类型</td>
+                                <td>入款名称</td>
+                                <td>快选金额</td>
+                                <td>是否显示</td>
+                            </tr>
+                            <tr>
+                                <td>银行入款</td>
+                                <td><input type="text" name="transfername" placeholder="汇款名称"></td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td><div class="displaycheck_out"><label><input type="checkbox" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>显示</label></div></td>
+                            </tr>
+                            <tr>
+                                <td>支付宝扫码</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="汇款名称">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>支付宝转账</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="支付宝昵称">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>微信扫码</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="微信昵称">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>微信转账</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="微信昵称">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>QQ扫码</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="QQ昵称">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>QQ转账</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="QQ昵称">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>财付通扫码</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="真实姓名">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>财付通转账</td>
+                                <td>
+                                    <input type="text" name="transfername" placeholder="真实姓名">
+                                </td>
+                                <td>
+                                    金额一<input class="inputs" type="text" name="moeny" value="50">
+                                    金额二<input class="inputs" type="text" name="moeny" value="100">
+                                    金额三<input class="inputs" type="text" name="moeny" value="500">
+                                    金额四<input class="inputs" type="text" name="moeny" value="1000">
+                                    金额五<input class="inputs" type="text" name="moeny" value="5000">
+                                </td>
+                                <td>
+                                    <div class="displaycheck_out">
+                                        <label>
+                                            <input type="checkbox" name="displaycheck" class="displaycheck" value="">
+                                            <div class="radiostyle"></div>显示</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--
+            <div class="bottomnote">
+                页面解读：<br/>
+                注单管理仅支持单平台查询，支持模糊查询；<br/>
+                每次进入时，需先选择查询的平台；<br/>
+                可根据单平台进行全部会员/单一会员及各平台的查询条件进行查询；
+            </div>
+        -->
+        </div>
+    </div>
+</body>
+
+</html>
