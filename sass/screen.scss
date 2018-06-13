@@ -181,8 +181,8 @@ select{
     color: #3e8ef0;
     border: 1px solid #3e8ef0;
     @include css3(transition,all .2s ease);
-    height: 30px;
-    line-height: 30px;
+    height: 28px;
+    line-height: 28px;
     text-align: center;
     cursor: pointer;
     vertical-align: middle;
@@ -524,7 +524,6 @@ body {
                 color:#666666;
                 line-height: 44px;
                 .displaycheck_out{
-                    padding: 0 50px;
                 }
                 label{
                     cursor: pointer;
