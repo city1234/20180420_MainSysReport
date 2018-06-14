@@ -214,6 +214,30 @@ select{
         margin-right: 5px;
     }
 }
+.ctrlbtn{
+    color: #fff;
+    background: #3e8ef0;
+    @include css3(transition,all .2s ease);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0 5px;
+    min-width: 90px;
+    i{
+        color: #fff;
+        font-size: 18px;
+        vertical-align: -3px;
+        margin-right: 5px;
+    }
+}
+.deletebtn{
+    background: #26bd7b;
+}
+.editbtn{
+    background: #f09e3e;
+}
 .radiostyle{
     display: inline-block;
     border: 1px solid #c2c2c2;
@@ -335,6 +359,11 @@ body {
 .searchlistline{
     font-size: 16px;
     margin: 10px 0;
+    input{
+        &::placeholder{
+            color:#bad9f0;
+        }
+    }
     >*{
         display: inline-block;
         margin-right: 15px;
@@ -536,8 +565,6 @@ body {
                     text-align: center;
                 }
                 .inputs{
-                    margin-left: 5px;
-                    margin-right: 25px;
                     width: 40px;
                 }
             }
@@ -953,9 +980,170 @@ body {
         }
     }
 }
-/*newseditpage*/
-#newseditpage{
+/*gash_companypage*/
+#gash_companypage{
     .searchlistline{
         margin: 27px 0 17px 0;
+    }
+    .tablestyle{
+        tr{
+            td{
+                .inputs{
+                    margin-left: 5px;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
+#newseditpage{
+    .linebtn{
+        min-width: 120px;
+    }
+    .tablestyle{
+        tr{
+            td{
+                input[type="radio"]{
+                    ~.radiostyle{
+                        margin-left: 10px;
+                    }
+                }
+                .inputs{
+                    margin-left: 5px;
+                }
+                .tdpayicon{
+                    width: 30px;
+                    vertical-align: middle;
+                }
+                .ctrlbtn{
+                    float: left;
+                    width: 40px;
+                    min-width: auto;
+                    height: 20px;
+                    line-height: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+/*outbox*/
+.outboxout{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    .outbg{
+        background: rgba(0, 0, 0, .5);
+        height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        .outbox{
+            width: 480px;
+            margin: 0 auto;
+            background: #fff;
+            @include css3(border-radius,3px);
+            overflow: hidden;
+            .outbox_header{
+                color: #12396b;
+                background: #bad8f0;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                line-height: 53px;
+            }
+            .outbox_content{
+                padding: 15px 10px;
+                .outboxtable{
+                    width: 100%;
+                    //border-spacing: 5px;
+                    td{
+                        span{
+                            color: #fd2442;
+                            margin-right: 10px;
+                        }
+                        .web_type{
+                            float: left;
+                            width: 80px;
+                            @include css3(box-shadow,none);
+                            border: 1px solid #bad9f0;
+                        }
+                        .web_input{
+                            float: left;
+                            width: calc(100% - 102px);
+                        }
+                        input{
+                            width:  calc(100% - 23px);
+                        }
+                        &:first-child{
+                            text-align: right;
+                            width: 80px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .outbox_picalert{
+                    padding: 15px 0;
+                    width: 350px;
+                    margin: 0 auto;
+                    display: -webkit-flex;
+                    display: flex;
+                    >*{
+                        flex-grow: 1;
+                    }
+                    .picalert_updatepic{
+                        width: 165px;
+                    }
+                    .picalert_txt{
+                        padding-left: 10px;
+                        line-height: 25px;
+                    }
+                    .uppicbox{
+                        color: #bad9f0;
+                        width: 90px;
+                        height: 90px;
+                        background: #eff4f8;
+                        border: 1px dashed #bad9f0;
+                        @include css3(border-radius,4px);
+                        text-align: center;
+                        display: -webkit-flex;
+                        display: flex;
+                        align-items: center;
+                        -webkit-align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                    }
+                    .chosepic{
+                        width: 82px;
+                        min-width: auto;
+                        margin-top: 15px;
+                    }
+                }
+                .outbox_ctrl{
+                    width: 350px;
+                    margin: 0 auto;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    >*{
+                        flex-grow: 1;
+                        max-width: 115px;
+                        height: 35px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    input{
+        &::placeholder{
+            color:#bad9f0;
+        }
     }
 }

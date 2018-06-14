@@ -39,4 +39,10 @@ $(document).ready(function() {
             $(".contentbox").eq(pagenum).fadeIn(300).siblings(".contentbox").fadeOut(0);
         }
     }
+
+
+    //outbox
+    $(".outpayboxtoggle").click(function () {
+        $(".outboxout").fadeToggle(300);
+    });
 });

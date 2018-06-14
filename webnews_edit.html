@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main system Reports</title>
+    <meta http-equiv="Content-Type"/>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/screen.css"/>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="newseditpage">
+        <div class="outboxout">
+            <div class="outbg">
+                <div class="outbox">
+                    <div class="outbox_header">自定义支付</div>
+                    <div class="outbox_content">
+                        <table class="tablestyle outboxtable">
+                            <tr class="text">
+                                <td>按钮角标:</td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="" checked>
+                                                <div class="radiostyle"></div>无</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>快</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>安</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>稳</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>热</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>火</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>充值类型:</td>
+                                <td>自定义支付</td>
+                            </tr>
+                            <tr>
+                                <td><span>*</span>充值名称:</td>
+                                <td><div class="inputout">
+                                    <input type="text" name="" placeholder="请输入名称">
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td><span>*</span>排序:</td>
+                                <td><div class="inputout">
+                                    <input type="text" name="" placeholder="请输入排序">
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td><span>*</span>网址:</td>
+                                <td>
+                                    <div class="web_type_out">
+                                        <select class="web_type" name="web_type">
+                                            <option value="http">http://</option>
+                                            <option value="https">https://</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputout">
+                                        <input class="web_input" type="text" name="" placeholder="请输入网址">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="outbox_picalert">
+                            <div class="picalert_updatepic">
+                                <div class="uppicbox">图片</div>
+                                <div class="ctrlbtn editbtn btnhover chosepic">选择图片</div>
+                            </div>
+                            <div class="picalert_txt">
+                                1.图片尺寸必须是60*60。<br/>
+                                2.图片大小不能超过50k。<br/>
+                                3.请上传png或jpg格式的图片。<br/>
+                                4.选择图片前，请先在网站资讯系 统进行上传图片。
+                            </div>
+                        </div>
+                        <div class="outbox_ctrl">
+                            <div class="ctrlbtn btnhover cancerbtn outpayboxtoggle">取消</div>
+                            <div class="ctrlbtn btnhover savebtn">保存</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-in">
+            <div class="searchlistline">
+                <div class="linebtn">在线存款编辑</div>
+                <div class="linebtn active">手机支付排序</div>
+            </div>
+            <div class="searchlistline">
+                <div class="linebtn outpayboxtoggle">新增自定义支付</div>
+                <div class="inputout">
+                    <input type="text" name="lotterynumber" placeholder="请输入关键字">
+                </div>
+                <div class="searchbtn btnhover">
+                    <i class="icon-search"></i>查询
+                </div>
+            </div>
+            <div class="contentboxout">
+                <!--table_one-->
+                <div class="contentbox realtimepage_table tablestyle table_one">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="15%">充值名称</td>
+                                <td width="15%">充值类型</td>
+                                <td width="15%">线上/线下</td>
+                                <td width="15%">排序</td>
+                                <td width="25%">按钮角标</td>
+                                <td width="40px">图标</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="微信"></td>
+                                <td>微信APP</td>
+                                <td>线上</td>
+                                <td><input class="inputs" type="text" name="sort" value="1"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="线上微信扫码"></td>
+                                <td>微信扫码</td>
+                                <td>线上</td>
+                                <td><input class="inputs" type="text" name="sort" value="2"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_gf.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="支付宝"></td>
+                                <td>支付宝APP</td>
+                                <td>线上</td>
+                                <td><input class="inputs" type="text" name="sort" value="3"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_gfs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="线上支付宝扫码"></td>
+                                <td>支付宝扫码</td>
+                                <td>线上</td>
+                                <td><input class="inputs" type="text" name="sort" value="4"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_uls.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="网银支付"></td>
+                                <td>网银支付</td>
+                                <td>线上</td>
+                                <td><input class="inputs" type="text" name="sort" value="5"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_tf.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="京东钱包"></td>
+                                <td>京东钱包APP</td>
+                                <td>线上</td>
+                                <td><input class="inputs" type="text" name="sort" value="6"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="transfername" value="百度钱包">
+                                </td>
+                                <td>百度钱包APP</td>
+                                <td>线上</td>
+                                <td>
+                                    <input class="inputs" type="text" name="sort" value="7">
+                                </td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="" checked>
+                                                <div class="radiostyle"></div>无</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>快</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>安</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>稳</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>热</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>火</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <img class="tdpayicon" src="/images/icon_vs.png" alt="">
+                                </td>
+                                <td></td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="银联钱包"></td>
+                                <td>银联钱包APP</td>
+                                <td>线上</td>
+                                <td><input class="inputs" type="text" name="sort" value="8"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="支付宝转账"></td>
+                                <td>支付宝转账</td>
+                                <td>线下</td>
+                                <td><input class="inputs" type="text" name="sort" value="9"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="微信转账"></td>
+                                <td>微信转账</td>
+                                <td>线下</td>
+                                <td><input class="inputs" type="text" name="sort" value="10"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="线下微信扫码"></td>
+                                <td>微信扫码</td>
+                                <td>线下</td>
+                                <td><input class="inputs" type="text" name="sort" value="11"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="QQ转账"></td>
+                                <td>QQ转账</td>
+                                <td>线下</td>
+                                <td><input class="inputs" type="text" name="sort" value="12"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="transfername" value="线下财付通扫码"></td>
+                                <td>财付通扫码</td>
+                                <td>线下</td>
+                                <td><input class="inputs" type="text" name="sort" value="13"></td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value="" checked><div class="radiostyle"></div>无</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>快</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>安</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>稳</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>热</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>火</label>
+                                            <label><input type="radio" name="displaycheck" class="displaycheck" value=""><div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td><img class="tdpayicon" src="/images/icon_vs.png" alt=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="transfername" value="自定义支付">
+                                </td>
+                                <td>自定义支付</td>
+                                <td>--</td>
+                                <td>
+                                    <input class="inputs" type="text" name="sort" value="14">
+                                </td>
+                                <td>
+                                    <form>
+                                        <div class="displaycheck_out">
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="" checked>
+                                                <div class="radiostyle"></div>无</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>快</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>安</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>稳</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>热</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>火</label>
+                                            <label>
+                                                <input type="radio" name="displaycheck" class="displaycheck" value="">
+                                                <div class="radiostyle"></div>大</label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <img class="tdpayicon" src="/images/icon_vs.png" alt="">
+                                </td>
+                                <td>
+                                    <div class="ctrlbtn btnhover editbtn outpayboxtoggle">编辑</div>
+                                    <a href=""><div class="ctrlbtn btnhover deletebtn">删除</div></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="searchpagebar">
+                        <div class="allpage">第1/ 23 条</div>
+                        <div class="mouchline">每页条数
+                            <select name="mouchline_select">
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                        <div class="turnpage">
+                            <div class="turnpagetxt">首页</div>
+                            <div class="turnpagebtn turnpageleft">
+                                <i class="icon-angle-double-left"></i>
+                            </div>
+                            <div class="turnpagenumber">1/10</div>
+                            <div class="turnpagebtn turnpageright">
+                                <i class="icon-angle-double-right"></i>
+                            </div>
+                            <div class="turnpagetxt">尾页</div>
+                            <div class="inputout">
+                                <input type="text" name="turnpageinput" value="1">
+                            </div>
+                            <div class="turnpagetxt">跳转</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="bottomnote">
+                页面解读：<br/>
+                注单管理仅支持单平台查询，支持模糊查询；<br/>
+                每次进入时，需先选择查询的平台；<br/>
+                可根据单平台进行全部会员/单一会员及各平台的查询条件进行查询；
+            </div>
+        -->
+        </div>
+    </div>
+</body>
+
+</html>
